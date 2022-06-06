@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product_descriptinActivity"
+    android:scrollbarSize="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/product_image_description"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/add_image"
+            android:layout_below="@+id/product_name_description"/>
+
+        <TextView
+            android:id="@+id/product_name_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:padding="8dp"
+            android:text="Product name :- "
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/product_description_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:padding="5dp"
+            android:text="Description :- "
+            android:layout_below="@id/product_image_description"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_description_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_description_txt"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:text="Product Description :- "
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/product_price_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_ID_description"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/border"
+            android:text="Product Price :- "
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/product_ID_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:padding="5dp"
+            android:text="Product ID :- "
+            android:layout_below="@id/product_description_description"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/product_ID_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_ID_txt"
+            android:padding="8dp"
+            android:background="@drawable/border"
+            android:text="Product ID :- "
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/proceed_to_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_price_description"
+            android:layout_marginTop="34dp"
+            android:text="Proceed to Buy"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

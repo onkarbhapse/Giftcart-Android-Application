@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdmincategoryActivity"
+    android:padding="15dp"
+    android:scrollbarSize="8dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--   Add new peoduct name   -->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Add New Product"
+            android:textAlignment="center"
+            android:textColor="@color/purple"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/new_orders_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sunglassesgifts"
+            android:layout_marginTop="30dp"
+            android:text="Check New Orders"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:id="@+id/admin_logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_orders_button"
+            android:layout_marginTop="15dp"
+            android:text="Logout"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"/>
+
+
+        <!--  Giftcars -->
+        <LinearLayout
+            android:id="@+id/giftcards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="40dp"
+            android:background="#FAEFFD"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/giftcard_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:text="Giftcards"
+                android:textSize="25dp" />
+
+
+        </LinearLayout>
+
+        <!--   Birthday gifts  -->
+        <LinearLayout
+            android:id="@+id/birthdaygifts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/giftcards"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#FAEFFD"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/birthdat_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Birthday gifts"
+                android:textSize="25dp"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+        <!-- Anniversary gifts   -->
+        <LinearLayout
+            android:id="@+id/anniversarygifts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/birthdaygifts"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#FAEFFD"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/anniverary_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Anniversary gifts"
+                android:textSize="25dp"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+        <!-- teddy gifts   -->
+        <LinearLayout
+            android:id="@+id/teddygifts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/anniversarygifts"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#FAEFFD"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/teddy_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Teddy"
+                android:textSize="25dp"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+        <!-- coffee mugs   -->
+        <LinearLayout
+            android:id="@+id/coffeemugsgifts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teddygifts"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#FAEFFD"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/coffee_mug_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coffee mugs with photo "
+                android:textSize="25dp"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+        <!-- rings  -->
+        <LinearLayout
+            android:id="@+id/ringsgifts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coffeemugsgifts"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#FAEFFD"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ring_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rings"
+                android:textSize="25dp"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+        <!-- ear rings  -->
+        <LinearLayout
+            android:id="@+id/earringsgifts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ringsgifts"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#FAEFFD"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/eaarrings_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ear rings "
+                android:textSize="25dp"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+        <!-- jewellery gifts   -->
+        <LinearLayout
+            android:id="@+id/jewellerygifts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/earringsgifts"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#FAEFFD"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/jewellary_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jewellery gifts"
+                android:textSize="25dp"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+        <!--  hats   -->
+        <LinearLayout
+            android:id="@+id/hatsgifts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jewellerygifts"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#FAEFFD"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/hat_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hats"
+                android:textSize="25dp"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+        <!--  watches  -->
+        <LinearLayout
+            android:id="@+id/watchegifts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hatsgifts"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#FAEFFD"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/watch_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Watches"
+                android:textSize="25dp"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+        <!--  sunglasses   -->
+        <LinearLayout
+            android:id="@+id/sunglassesgifts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/watchegifts"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#FAEFFD"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/sunglassess_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunglasses"
+                android:textSize="25dp"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

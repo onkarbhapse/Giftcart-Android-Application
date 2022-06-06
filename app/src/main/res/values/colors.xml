@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF3E82</color>
+    <color name="colorPrimaryDark">#F31763</color>
+    <color name="buttoncolourt">#D81B60</color>
+    <color name="bacground">#F7E8ED</color>
+    <color name="LoginText">#E91E63</color>
+    <color name="Buttontext">#FAF9F9</color>
+    <color name="purple">#673AB7</color>
+    <color name="pershant_blue">#091B7A</color>
+    <color name="blue">#2949F0</color>
+    <color name="faintpurple">#FAEFFD</color>
+    <color name="purple_Welcome">#9C27B0</color>
+    <color name="green">#32CD32</color>
+    <color name="gray">#6AFDFAFA</color>
+
+</resources>
+  
